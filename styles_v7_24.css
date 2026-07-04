@@ -2030,7 +2030,7 @@ body.light-mode .theme-toggle .moon-icon {
     color: #000000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .preview-grid-two-col {
         grid-template-columns: 1fr;
         gap: 24px;
