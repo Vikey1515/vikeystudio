@@ -1389,12 +1389,20 @@ body.light-mode .theme-toggle .moon-icon {
         display: flex;
     }
     
+    .hero-section {
+        height: auto;
+        aspect-ratio: 16/9;
+        min-height: 350px;
+        margin: 140px auto 40px auto;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding-top: 120px;
-        padding-bottom: 60px;
+        justify-content: center;
+        height: 100%;
+        padding: 30px;
     }
     
     .hero-text-area {
@@ -1452,18 +1460,41 @@ body.light-mode .theme-toggle .moon-icon {
         padding: 60px 0;
     }
     
+    .hero-section {
+        height: auto;
+        aspect-ratio: 16/9;
+        min-height: 220px;
+        margin: 130px auto 30px auto;
+        border-radius: 20px;
+    }
+    
+    .hero-content {
+        padding: 15px;
+    }
+    
+    .hero-slider-indicators {
+        bottom: 12px;
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    
     .hero-text-area h1 {
-        font-size: 2.4rem;
+        font-size: 1.4rem;
     }
     
     .hero-actions {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: auto;
+        margin-top: 10px;
     }
     
     .hero-actions .btn-glow,
     .hero-actions .btn-outline {
-        width: 100%;
+        width: auto;
+        padding: 8px 14px;
+        font-size: 0.8rem;
     }
     
     .footer-content {
@@ -2003,6 +2034,33 @@ body.light-mode .theme-toggle .moon-icon {
     .preview-grid-two-col {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+    
+    /* Place the project titles below the preview box on mobile */
+    .project-item .project-meta,
+    .project-item.portrait-card .project-meta {
+        position: relative !important;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border-top: none !important;
+        padding: 12px 4px 6px 4px !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+    
+    /* Ensure the titles stay visible when playing/scrubbing on mobile */
+    .project-item.playing .project-meta,
+    .project-item.scrubbing .project-meta {
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+    }
+    
+    .project-item {
+        overflow: visible !important;
     }
 }
 
