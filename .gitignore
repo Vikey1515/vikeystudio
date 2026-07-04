@@ -1,0 +1,9 @@
+Assets/Videos/
+Assets/Photos/
+scratch/
+*.py
+*.json
+*.txt
+.netlify/
+.DS_Store
+Thumbs.db

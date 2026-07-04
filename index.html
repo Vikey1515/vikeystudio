@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikey Studio | AI Creative Specialist & Professional Video Editor</title>
+    <meta name="description" content="Portfolio of Vikey, AI Creative Specialist and Professional Video Editor. Offering next-gen commercial editing, AI creatives, and high-tier visual production.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles_v7_20.css">
+    <script>
+        window.onerror = function(msg, url, line) {
+            alert("Error: " + msg + "\nURL: " + url + "\nLine: " + line);
+            return false;
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Glowing Cursor Effect Background -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#" aria-label="Vikey Studio Home">
+                <img src="Assets/LOGO/Logo 2.png" alt="Vikey Studio Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-cta">
+            
+            <a href="#contact" class="btn-glow-nav">Get Started</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Background Video Wrappers (for switching) -->
+        <div class="hero-video-container">
+            <video preload="metadata" id="hero-bg-video" autoplay loop muted playsinline class="hero-video active" src="Assets/Videos/Preview 1.webm"></video>
+            <div class="hero-overlay"></div>
+            <div class="hero-overlay-bottom"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text-area">
+                <h1>Where Imagination<br><span class="glow-text">Meets Realism.</span></h1>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-glow">Explore Work</a>
+                    <a href="#contact" class="btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reference style bottom slider indicators -->
+        <div class="hero-slider-indicators">
+            <div class="indicator-bar active" data-index="0"><div class="indicator-fill"></div></div>
+            <div class="indicator-bar" data-index="1"><div class="indicator-fill"></div></div>
+            <div class="indicator-bar" data-index="2"><div class="indicator-fill"></div></div>
+            <div class="indicator-bar" data-index="3"><div class="indicator-fill"></div></div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="project-tabs">
+                <button class="tab-btn active" data-filter="ai-commercial">AI Commercial</button>
+                <button class="tab-btn" data-filter="editing">Editing</button>
+            </div>
+
+            <div class="project-grid" id="project-grid">
+                                                   <!-- ================= AI COMMERCIAL PROJECTS (4 x 16:9 landscape + 6 x 9:16 portrait) ================= -->
+                <!-- AI Commercial Card 1: Cat (Landscape) -->
+                <div class="project-item landscape-card" data-category="ai-commercial">
+                    <div class="project-media">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Cat.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Comfor Kills - 3D Animation</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 2: Baasha (Landscape) -->
+                <div class="project-item landscape-card" data-category="ai-commercial">
+                    <div class="project-media">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Baasha.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Rajinified - Classic Cinema</h3>
+                    </div>
+                </div>
+
+
+                <!-- ================= EDITING PROJECTS (3 x 9:16) ================= -->
+                <!-- Editing Card 1: Honey Badger -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <img class="custom-thumbnail" src="Assets/Photos/Honey.jpeg" alt="Honey Badger Thumbnail">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/utxcbTYh3_c?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Honey Badger- ன் கதை 🔥</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 2: தம்பி தப்பு -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/fr5kJLxOduU?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>தம்பி தப்பு 😡 - Movies vs Real Life ⚖️</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 3: Chess - ன் வரலாறு -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/e1m8CtnfzrU?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Chess - ன் வரலாறு ♟️🔥</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="projects-actions text-center">
+                <a href="projects.html" id="view-more-btn" class="btn-glow">View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section text-center">
+        <div class="container">
+            <div class="courses-placeholder-card">
+                <div class="cap-icon-wrapper">
+                    <!-- Graduation Cap Icon -->
+                    <svg class="grad-cap-svg" viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                    </svg>
+                </div>
+                <h2 class="section-title">AI & Editing Courses</h2>
+                <div class="teaching-soon-badge-container">
+                    <div class="teaching-soon-badge">Teaching Soon</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands" class="brands-section text-center">
+        <div class="container">
+            <h2 class="section-title">Trusted by Brands</h2>
+            <div class="brands-grid">
+                <!-- Logo 1 (Round) -->
+                <div class="brand-item round">
+                    <img src="Assets/LOGO/Pachayappas.jpg" alt="Pachayappas Logo">
+                </div>
+                <!-- Logo 2 (Round) -->
+                <div class="brand-item round">
+                    <img src="Assets/LOGO/Plan B.jpg" alt="Plan B Logo">
+                </div>
+                <!-- Logo 3 (Rectangle) -->
+                <div class="brand-item rectangle">
+                    <img src="Assets/LOGO/Onecrete.png" alt="Onecrete Logo">
+                </div>
+                <!-- Logo 4 (Rectangle - Center Highlight) -->
+                <div class="brand-item rectangle highlight">
+                    <img src="Assets/LOGO/Anandhaas.jpg" alt="Anandhaas Logo">
+                </div>
+                <!-- Logo 5 (Round) -->
+                <div class="brand-item round">
+                    <img src="Assets/LOGO/Night.jpeg" alt="Night Logo">
+                </div>
+                <!-- Logo 6 (Round) -->
+                <div class="brand-item round">
+                    <img src="Assets/LOGO/Mud.PNG" alt="Mud Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2>Let's build something<br><span class="glow-text">legendary</span>.</h2>
+                    <p>Have an upcoming campaign, edit, or project inquiry? Drop a line and let's configure the perfect solution.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <span class="label">General Inquiries:</span>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vikeymedia15@gmail.com" target="_blank">vikeymedia15@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form action="https://formsubmit.co/vikeymedia15@gmail.com" method="POST" id="contact-form" class="contact-form">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Portfolio Inquiry - Vikey Studio">
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="Name" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="Email" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label>Service Interest</label>
+                            <div class="custom-dropdown" id="custom-service-select">
+                                <div class="dropdown-trigger">
+                                    <span id="selected-service-text">AI Commercial & ADS</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+                                </div>
+                                <div class="dropdown-options">
+                                    <div class="dropdown-option selected" data-value="AI Commercial & ADS">AI Commercial & ADS</div>
+                                    <div class="dropdown-option" data-value="AI Short Films">AI Short Films</div>
+                                    <div class="dropdown-option" data-value="Video Editing">Video Editing</div>
+                                </div>
+                                <input type="hidden" name="Service Interest" id="service-interest-input" value="AI Commercial & ADS">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Description</label>
+                            <textarea id="message" name="Message" rows="4" required autocomplete="off"></textarea>
+                        </div>
+                        <button type="submit" class="btn-glow submit-btn">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Ending Page -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>&copy; 2026 Vikey Studio. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <p>Designed with curation and precision.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/vikey_creates/" target="_blank" class="social-link" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@Vikey_Creates" target="_blank" class="social-link" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M23.498 6.163c-.272-1.017-1.074-1.819-2.091-2.091C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.407.572c-1.017.272-1.819 1.074-2.091 2.091C0 8.01 0 12 0 12s0 3.99.502 5.837c.272 1.017 1.074 1.819 2.091 2.091 1.847.572 9.407.572 9.407.572s7.56 0 9.407-.572c1.017-.272 1.819-1.074 2.091-2.091C24 15.99 24 12 24 12s0-3.99-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vikeymedia15@gmail.com" target="_blank" class="social-link" aria-label="Email">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Courses Popup Modal -->
+    <div class="modal-overlay" id="courses-modal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-message-container" id="modal-words-container">
+                <!-- Words will be injected here dynamically by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Contact Widget -->
+    <div class="floating-contact-widget">
+        <button class="widget-trigger" aria-label="Contact Options">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+        <div class="widget-menu">
+            <a href="https://www.instagram.com/vikey_creates/" target="_blank" class="widget-item" aria-label="Instagram">
+                <img src="Assets/LOGO/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@Vikey_Creates" target="_blank" class="widget-item" aria-label="YouTube">
+                <img src="Assets/LOGO/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://wa.me/93601730839" target="_blank" class="widget-item" aria-label="WhatsApp">
+                <img src="Assets/LOGO/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vikeymedia15@gmail.com" target="_blank" class="widget-item" aria-label="Email">
+                <img src="Assets/LOGO/gmail.png" alt="Email">
+            </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="app_v3_26.js"></script>
+</body>
+</html>

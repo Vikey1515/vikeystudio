@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Vikey Studio</title>
+    <meta name="description" content="Extended portfolio of Vikey Studio. Premium vertical format creative edits and AI productions.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles_v7_20.css">
+    <script>
+        window.onerror = function(msg, url, line) {
+            alert("Error: " + msg + "\nURL: " + url + "\nLine: " + line);
+            return false;
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Glowing Cursor Effect Background -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" aria-label="Vikey Studio Home">
+                <img src="Assets/LOGO/Logo 2.png" alt="Vikey Studio Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#projects" class="active">Projects</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-cta">
+            <a href="index.html#contact" class="btn-glow-nav">Get Started</a>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Main Gallery Section -->
+    <section class="projects-section" style="padding-top: 130px; margin-top: 0;">
+        <div class="container">
+            
+            <!-- Switchable Title Navigation Header -->
+            <div class="title-nav-wrapper">
+                <button class="title-nav-arrow" id="prev-tab-btn" aria-label="Previous Section">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <h1 class="section-title text-center" id="gallery-title" style="margin-bottom: 0; min-width: 250px;">Ai Commercial</h1>
+                <button class="title-nav-arrow" id="next-tab-btn" aria-label="Next Section">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+
+            <!-- Unified Gallery Grid -->
+            <div class="project-grid gallery-grid show-ai-commercial" id="projects-gallery-grid">
+                
+                                                  <!-- ================= AI COMMERCIAL PROJECTS (4 x 16:9 landscape + 6 x 9:16 portrait) ================= -->
+                <!-- AI Commercial Card 1: Cat (Landscape) -->
+                <div class="project-item landscape-card" data-category="ai-commercial">
+                    <div class="project-media">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Cat.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Comfor Kills - 3D Animation</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 2: Baasha (Landscape) -->
+                <div class="project-item landscape-card" data-category="ai-commercial">
+                    <div class="project-media">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Baasha.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Rajinified - Classic Cinema</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 3: First Take (Landscape) -->
+                <div class="project-item landscape-card" data-category="ai-commercial">
+                    <div class="project-media">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/First Take.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>First Take - A Tamil Western</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 4: Mylapore (Landscape) -->
+                <div class="project-item landscape-card" data-category="ai-commercial">
+                    <div class="project-media">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Mylapore.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Mylapore - Hand Drawn Animation</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 5: Pachayappas (Portrait) -->
+                <div class="project-item portrait-card" data-category="ai-commercial">
+                    <div class="project-media portrait">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Pachayappas.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Avatar Pongal - Sci-Fi Promotion</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 6: Nungambakkam (Portrait) -->
+                <div class="project-item portrait-card" data-category="ai-commercial">
+                    <div class="project-media portrait">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Nungambakkam.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Magical Way - 2D Animation</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 7: Thai Poosam (Portrait) -->
+                <div class="project-item portrait-card" data-category="ai-commercial">
+                    <div class="project-media portrait">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Thai Poosam.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Blessing of the Peacock - Mythology</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 8: AAC (Portrait) -->
+                <div class="project-item portrait-card" data-category="ai-commercial">
+                    <div class="project-media portrait">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/AAC.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>The House - Commercial AD</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 9: Erase (Portrait) -->
+                <div class="project-item portrait-card" data-category="ai-commercial">
+                    <div class="project-media portrait">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Erase.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Termites - Cinematic AD</h3>
+                    </div>
+                </div>
+
+                <!-- AI Commercial Card 10: Night (Portrait) -->
+                <div class="project-item portrait-card" data-category="ai-commercial">
+                    <div class="project-media portrait">
+                        <video preload="metadata" class="hover-play-video" loop playsinline controlsList="nodownload" src="Assets/Videos/Night.mp4"></video>
+                        <button class="big-play-btn" aria-label="Play Video">
+                            <img src="Assets/LOGO/Logo.png" alt="Play">
+                        </button>
+                        <div class="custom-video-controls">
+                            <button class="control-btn play-pause-btn" aria-label="Play/Pause">
+                                <svg class="play-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                            </button>
+                            <div class="video-progress-container">
+                                <div class="video-progress-hover-line"></div>
+                                <div class="video-progress-bar"></div>
+                                <div class="video-progress-knob"></div>
+                                <div class="video-time-tooltip">00:00</div>
+                            </div>
+                            <button class="control-btn expand-btn" aria-label="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">AI Commercial</span>
+                        <h3>Night2Night - Mascot Promotion</h3>
+                    </div>
+                </div>
+                <!-- ================= EDITING PROJECTS (15 x 9:16 portrait) ================= -->
+                <!-- Editing Card 1 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/iEWgfjEVZlE?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Sea Horse - ன் கதை 🥹</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 2 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/M_RIgGi9O3k?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Platypus - ன் கதை 🥹</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 3 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <img class="custom-thumbnail" src="Assets/Photos/Honey.jpeg" alt="Honey Badger Thumbnail">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/utxcbTYh3_c?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Honey Badger- ன் கதை 🔥</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 4 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/2R3LEqFX6Dg?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>ஆம்பளைக்கு Nip**es எதுக்கு?</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 5 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/fr5kJLxOduU?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>தம்பி தப்பு 😡 - Movies vs Real Life ⚖️</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 6 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/rdaDe_EvLo4?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Judge - ஐ கடுப்பாக்கிய Ai</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 7 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/kNVWbOxrh3o?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>TVK ஆட்சி அமைக்குமா?</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 8 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/80RbwBtmm30?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>சாத்தான்குளம் தீர்ப்பு - Explained ⚖️</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 9 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/d16-Ih1JYGM?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>பாவப்பட்ட Punch 🐵🥲</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 10 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/e1m8CtnfzrU?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Chess - ன் வரலாறு ♟️🔥</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 11 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/4CS3V_rU6eY?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Cancer - ஐ முடிக்க வந்த Ai 🔥</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 12 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/gymrE29erSI?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Breaking Bad சோதனைகள் 😂</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 13 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/2Uaemwaw7MU?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>கரப்பான் பூச்சியின் கதை 🥹🔥</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 14 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/mwlEwnU7Aho?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>Penguin - ன் பேராண்மை 🐧</h3>
+                    </div>
+                </div>
+                <!-- Editing Card 15 -->
+                <div class="project-item portrait-card" data-category="editing">
+                    <div class="project-media portrait">
+                        <iframe class="youtube-short-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/U7KPn1tzBHA?enablejsapi=1&mute=0&autoplay=0&controls=0&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-meta">
+                        <span class="category-badge">Editing</span>
+                        <h3>140 வருசம் ஓடும் Video😳</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Home -->
+            <div class="projects-actions text-center" style="margin-top: 50px;">
+                <a href="index.html#projects" class="btn-outline">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>&copy; 2026 Vikey Studio. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <p>Designed with curation and precision.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.instagram.com/vikey_creates/" target="_blank" class="social-link" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@Vikey_Creates" target="_blank" class="social-link" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M23.498 6.163c-.272-1.017-1.074-1.819-2.091-2.091C19.56 3.5 12 3.5 12 3.5s-7.56 0-9.407.572c-1.017.272-1.819 1.074-2.091 2.091C0 8.01 0 12 0 12s0 3.99.502 5.837c.272 1.017 1.074 1.819 2.091 2.091 1.847.572 9.407.572 9.407.572s7.56 0 9.407-.572c1.017-.272 1.819-1.074 2.091-2.091C24 15.99 24 12 24 12s0-3.99-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vikeymedia15@gmail.com" target="_blank" class="social-link" aria-label="Email">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shared UI Theme Switcher logic & Cursor setup -->
+    <script src="app_v3_26.js"></script>
+
+    <!-- Page Specific Gallery Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const prevBtn = document.getElementById('prev-tab-btn');
+            const nextBtn = document.getElementById('next-tab-btn');
+            const galleryTitle = document.getElementById('gallery-title');
+            const grid = document.getElementById('projects-gallery-grid');
+            const urlParams = new URLSearchParams(window.location.search);
+            const tabParam = urlParams.get('tab');
+            
+            let currentTab = 'ai-commercial'; // default
+            
+            // Normalize parameter (e.g. replace underscore with hyphen)
+            const normalizedTab = tabParam ? tabParam.replace('_', '-') : '';
+            
+            if (normalizedTab === 'editing') {
+                currentTab = 'editing';
+                galleryTitle.textContent = 'Editing';
+                grid.className = 'project-grid gallery-grid show-editing';
+            } else if (normalizedTab === 'ai-commercial') {
+                currentTab = 'ai-commercial';
+                galleryTitle.textContent = 'Ai Commercial';
+                grid.className = 'project-grid gallery-grid show-ai-commercial';
+            }
+            
+            function switchTab() {
+                if (currentTab === 'editing') {
+                    currentTab = 'ai-commercial';
+                    galleryTitle.textContent = 'Ai Commercial';
+                    grid.className = 'project-grid gallery-grid show-ai-commercial';
+                } else {
+                    currentTab = 'editing';
+                    galleryTitle.textContent = 'Editing';
+                    grid.className = 'project-grid gallery-grid show-editing';
+                }
+            }
+            
+            if (prevBtn) prevBtn.addEventListener('click', switchTab);
+            if (nextBtn) nextBtn.addEventListener('click', switchTab);
+            
+            // Hover play behavior (specifically for this page)
+            // Helper to send messages to YouTube iFrame Player API
+            function controlYTPlayer(iframe, action) {
+                if (!iframe || !iframe.contentWindow) return;
+                const command = action === 'play' ? 'playVideo' : 'pauseVideo';
+                try {
+                    iframe.contentWindow.postMessage(JSON.stringify({
+                        event: 'command',
+                        func: command,
+                        args: ''
+                    }), '*');
+                } catch (e) {}
+            }
+
+            // Toggle playing class for HTML5 videos on play/pause
+            const html5Videos = document.querySelectorAll('.hover-play-video');
+            html5Videos.forEach(v => {
+                const item = v.closest('.project-item');
+                if (item) {
+                    v.addEventListener('play', () => item.classList.add('playing'));
+                    v.addEventListener('playing', () => item.classList.add('playing'));
+                    v.addEventListener('pause', () => item.classList.remove('playing'));
+                    v.addEventListener('ended', () => item.classList.remove('playing'));
+                }
+            });
+
+            const projectItems = document.querySelectorAll('.project-item');
+            projectItems.forEach(item => {
+                const video = item.querySelector('.hover-play-video');
+                const ytIframe = item.querySelector('.youtube-short-iframe');
+                
+                item.addEventListener('mouseenter', () => {
+                    // 1. Pause all other HTML5 videos
+                    const otherHTML5Videos = document.querySelectorAll('.hover-play-video');
+                    otherHTML5Videos.forEach(otherVideo => {
+                        if (otherVideo !== video) {
+                            otherVideo.pause();
+                        }
+                    });
+
+                    // 2. Pause all other YouTube videos
+                    const otherYTIframes = document.querySelectorAll('.youtube-short-iframe');
+                    otherYTIframes.forEach(otherIframe => {
+                        if (otherIframe !== ytIframe) {
+                            controlYTPlayer(otherIframe, 'pause');
+                            const otherItem = otherIframe.closest('.project-item');
+                            if (otherItem) {
+                                otherItem.classList.remove('playing');
+                            }
+                        }
+                    });
+
+                    // 3. Pause any active Wistia video players
+                    if (window.Wistia) {
+                        try {
+                            const allWistiaVideos = Wistia.api.all();
+                            allWistiaVideos.forEach(w => {
+                                w.pause();
+                                const otherContainer = w.container.closest('.project-item');
+                                if (otherContainer) {
+                                    otherContainer.classList.remove('playing');
+                                }
+                            });
+                        } catch (e) {}
+                    }
+
+                    // 4. Play the current video/iframe
+                    if (video) {
+                        video.play().catch(() => {});
+                    }
+                    if (ytIframe) {
+                        controlYTPlayer(ytIframe, 'play');
+                        item.classList.add('playing');
+                    }
+                });
+
+                // mouseleave pause behavior removed to keep the video playing until another card is pointed
+            });
+
+            // Wistia play listener (specifically for Wistia embeds on this page)
+            window._wq = window._wq || [];
+            _wq.push({
+                id: "_all",
+                onReady: function(video) {
+                    video.bind("play", function() {
+                        // Add playing class to the container project-item
+                        const container = video.container.closest('.project-item');
+                        if (container) {
+                            container.classList.add('playing');
+                        }
+
+                        // Pause all HTML5 hover-play videos
+                        const hoverVideos = document.querySelectorAll('.hover-play-video');
+                        hoverVideos.forEach(v => v.pause());
+
+                        // Pause all YouTube short iframes
+                        const ytIframes = document.querySelectorAll('.youtube-short-iframe');
+                        ytIframes.forEach(y => {
+                            controlYTPlayer(y, 'pause');
+                            const item = y.closest('.project-item');
+                            if (item) {
+                                item.classList.remove('playing');
+                            }
+                        });
+
+                        // Pause all other Wistia embeds
+                        if (window.Wistia) {
+                            try {
+                                const allWistiaVideos = Wistia.api.all();
+                                allWistiaVideos.forEach(w => {
+                                    if (w.hashedId() !== video.hashedId()) {
+                                        w.pause();
+                                        const otherContainer = w.container.closest('.project-item');
+                                        if (otherContainer) {
+                                            otherContainer.classList.remove('playing');
+                                        }
+                                    }
+                                });
+                            } catch (e) {}
+                        }
+                    });
+
+                    video.bind("pause", function() {
+                        const container = video.container.closest('.project-item');
+                        if (container) {
+                            container.classList.remove('playing');
+                        }
+                    });
+
+                    video.bind("end", function() {
+                        const container = video.container.closest('.project-item');
+                        if (container) {
+                            container.classList.remove('playing');
+                        }
+                    });
+                }
+            });
+
+            /* --- PAUSE VIDEOS SCROLLED OUT OF VIEWPORT --- */
+            const viewportObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        const item = entry.target;
+                        if (item.classList.contains('playing')) {
+                            const video = item.querySelector('.hover-play-video');
+                            const ytIframe = item.querySelector('.youtube-short-iframe');
+                            
+                            if (video) {
+                                video.pause();
+                            }
+                            if (ytIframe) {
+                                controlYTPlayer(ytIframe, 'pause');
+                            }
+                            if (window.Wistia) {
+                                try {
+                                    const allWistiaVideos = Wistia.api.all();
+                                    allWistiaVideos.forEach(w => {
+                                        if (w.container && item.contains(w.container)) {
+                                            w.pause();
+                                        }
+                                    });
+                                } catch (e) {}
+                            }
+                            item.classList.remove('playing');
+                        }
+                    }
+                });
+            }, { root: null, threshold: 0 });
+
+            document.querySelectorAll('.project-item').forEach(item => {
+                viewportObserver.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
