@@ -310,16 +310,16 @@ function init() {
     };
 
     const showProgressControls = (card) => {
-        const progressContainer = card.querySelector('.video-progress-container');
-        if (progressContainer) {
-            progressContainer.classList.remove('hidden');
+        const controls = card.querySelector('.custom-video-controls');
+        if (controls) {
+            controls.classList.remove('hidden');
         }
     };
 
     const hideProgressControls = (card) => {
-        const progressContainer = card.querySelector('.video-progress-container');
-        if (progressContainer) {
-            progressContainer.classList.add('hidden');
+        const controls = card.querySelector('.custom-video-controls');
+        if (controls) {
+            controls.classList.add('hidden');
         }
     };
 
@@ -336,7 +336,7 @@ function init() {
             if (card.classList.contains('playing')) {
                 hideProgressControls(card);
             }
-        }, 1000);
+        }, 1500);
     };
 
     projectItems.forEach(item => {
@@ -446,6 +446,17 @@ function init() {
                 item.classList.add('playing');
             }
         });
+
+        // Interaction handler to show controls when active and schedule hide
+        const handleInteraction = () => {
+            if (item.classList.contains('playing')) {
+                showProgressControls(item);
+                scheduleHideProgress(item);
+            }
+        };
+
+        item.addEventListener('mousemove', handleInteraction);
+        item.addEventListener('touchstart', handleInteraction, { passive: true });
 
         // mouseleave pause behavior removed to keep the video playing until another card is pointed
     });

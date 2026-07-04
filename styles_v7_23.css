@@ -2377,6 +2377,12 @@ body.light-mode .theme-toggle .moon-icon {
     transform: translateY(0);
 }
 
+.custom-video-controls.hidden {
+    opacity: 0 !important;
+    transform: translateY(10px) !important;
+    pointer-events: none !important;
+}
+
 .control-btn {
     background: transparent;
     border: none;
