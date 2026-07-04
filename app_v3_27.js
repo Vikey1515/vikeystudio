@@ -204,22 +204,56 @@ function init() {
         });
     });
 
+    let isHeroVisible = true;
+
     // Auto switch video every 4 seconds if hero element is present
     let autoCycleTimer;
     if (heroBgVideo) {
         autoCycleTimer = setInterval(() => {
-            const nextIndex = (currentHeroIndex + 1) % videoSources.length;
-            updateHeroVideos(nextIndex);
+            if (isHeroVisible) {
+                const nextIndex = (currentHeroIndex + 1) % videoSources.length;
+                updateHeroVideos(nextIndex);
+            }
         }, 4000);
     }
 
     function resetAutoCycle() {
         if (!heroBgVideo) return;
         clearInterval(autoCycleTimer);
-        autoCycleTimer = setInterval(() => {
-            const nextIndex = (currentHeroIndex + 1) % videoSources.length;
-            updateHeroVideos(nextIndex);
-        }, 4000);
+        if (isHeroVisible) {
+            autoCycleTimer = setInterval(() => {
+                const nextIndex = (currentHeroIndex + 1) % videoSources.length;
+                updateHeroVideos(nextIndex);
+            }, 4000);
+        }
+    }
+
+    // Observer to pause hero video and auto-cycle when out of view
+    const heroSection = document.getElementById('home');
+    if (heroSection && heroBgVideo) {
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    isHeroVisible = true;
+                    heroBgVideo.play().catch(() => {});
+                    resetAutoCycle();
+                    const activeBar = document.querySelector('.indicator-bar.active .indicator-fill');
+                    if (activeBar) {
+                        activeBar.style.animationPlayState = 'running';
+                    }
+                } else {
+                    isHeroVisible = false;
+                    heroBgVideo.pause();
+                    clearInterval(autoCycleTimer);
+                    const activeBar = document.querySelector('.indicator-bar.active .indicator-fill');
+                    if (activeBar) {
+                        activeBar.style.animationPlayState = 'paused';
+                    }
+                }
+            });
+        }, { threshold: 0 });
+
+        heroObserver.observe(heroSection);
     }
 
     /* --- HOVER TO PLAY SNIPPETS ON PORTFOLIO GRID --- */
